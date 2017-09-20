@@ -17,11 +17,12 @@ public final class Main implements Utils {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("hello World");
-		int[] valores = { 9, 3, 8, 1, 2};
+		int[] valores = { 9, 3, 8, 1, 2, 1};
 		Main main = new Main();
 		
 		System.out.println("El valor mínimo es: " + main.findSmallest(valores));
 		System.out.println("La suma de valores es: " + main.sum(valores));
+		System.out.println("tiene: " + main.frequency(valores, 1) + " veces el numero 1");
 
 	}
 /*
@@ -70,6 +71,24 @@ public final class Main implements Utils {
 			}
 		}
 		return sum;
+	}
+	/*
+	 * (non-Javadoc)
+	 * this method returns the frequenct of n values
+	 * @see org.escoladeltreball.helloworld.Utils#frequency(int[], int)
+	 */
+	@Override
+	public int frequency(int[] values, int n) {
+		// TODO Auto-generated method stub
+		int count = 0;
+		if (values.length > 0) {
+			for (int value: values) {
+				if (value == n) {
+					count++;
+				}
+			}
+		}
+		return count;
 	}
 
 }

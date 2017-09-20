@@ -10,6 +10,11 @@ package org.escoladeltreball.helloworld;
 public interface Utils {
 
 	/*
+	 * this method returns the frequency of n values
+	 * no es necesario escribir public abstract ya que en interficies siempre lo son.
+	 */
+	public abstract int frequency(int[]values, int n);
+	/*
 	 * this method returns the smalllest value in a integer array
 	 */
 	public abstract int findSmallest(int[] values);
