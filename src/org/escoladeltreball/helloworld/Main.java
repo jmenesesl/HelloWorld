@@ -23,6 +23,7 @@ public final class Main implements Utils {
 		System.out.println("El valor mínimo es: " + main.findSmallest(valores));
 		System.out.println("La suma de valores es: " + main.sum(valores));
 		System.out.println("tiene: " + main.frequency(valores, 1) + " veces el numero 1");
+		System.out.println(" el porcentaje de apariciones es: " + main.frequencyPercentage(valores, 1));
 
 	}
 /*
@@ -89,6 +90,17 @@ public final class Main implements Utils {
 			}
 		}
 		return count;
+	}
+	/*
+	 * (non-Javadoc)
+	 * this method returns the frequency of n values in a percentage
+	 * @see org.escoladeltreball.helloworld.Utils#frequencyPercentage(int[], int)
+	 */
+	@Override
+	public double frequencyPercentage(int[] values, int n) {
+		// TODO Auto-generated method stub
+		double percentage = (double)this.frequency(values, n) / values.length;
+		return percentage;
 	}
 
 }
