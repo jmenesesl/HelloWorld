@@ -17,7 +17,7 @@ public final class Main implements Utils {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("hello World");
-		int[] valores = { 9, 3, 8, 1, 2, 1};
+		int[] valores = { 9, 3, 8, 1, 2, 1 };
 		Main main = new Main();
 		
 		System.out.println("El valor mínimo es: " + main.findSmallest(valores));
